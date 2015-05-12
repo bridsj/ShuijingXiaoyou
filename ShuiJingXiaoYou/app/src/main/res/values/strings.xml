@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">小幽水晶</string>
+    <string name="detail_title">详情</string>
+    <string name="back_str">返回</string>
+
+    <string name="category_taobao_str">淘宝商城</string>
+    <string name="category_zaixian_str">在线占卜</string>
+    <string name="start_zhanbu_str">开始占卜</string>
+    <string name="category_about_str">关于我们</string>
+    <string name="category_taluo_str">塔罗占卜</string>
+    <string name="category_shuijing_str">水晶牌占卜</string>
+    <string name="category_xiaoyouba_str">小幽吧</string>
+    <string name="category_xiaoyouwei_str">小幽微官网</string>
+    <string name="category_xiaoyoutuijian_str">小幽推荐</string>
+    <string name="show_history_str">查看往期</string>
+    <string name="taluo_title_str">获得塔罗牌</string>
+    <string name="shuijing_title_str">你已获得一颗宝石......</string>
+    <string name="zaixian_content">请选择</string>
+    <string name="about_str1">欢迎来到小幽的塔罗世界</string>
+    <string name="about_str2">这是一个神秘的App，首先要相信，然后平心静意下来，静默60秒，将您内心所想要的问题说出来，点击在线占卜里面的“塔罗占卜”或“水晶占卜”即可进行占卜\n\n赶快开始吧！小幽隆重推出水晶护肤系列哦~</string>
+    <string name="weixin_title">微信号：</string>
+    <string name="weixin_name">xiaoyoushuijingtaluo</string>
+    <string name="taobao_open">使用手机淘宝打开</string>
+    <string name="loading">正在加载...</string>
+    <string name="empty_warn_str">点击右上角按钮可以占卜哦!</string>
+    <string name="exit_warn">再按一次即可退出</string>
+    <string name="clip_weixin_succ2">已复制到剪贴板，跳转至微信关注我们?</string>
+    <string name="clip_weixin_succ1">已复制到剪贴板~</string>
+    <string name="warn_title">温馨提示</string>
+    <string name="cancel_str">取消</string>
+    <string name="ok_str">确定</string>
+
+    <string name="clip_taobao">已将店铺名称复制到剪贴板\n\n进入手机淘宝后：\n1、选择店铺类型\n2、粘贴当前内容\n\n即可浏览我们的店铺</string>
+    <string name="taobao_warn_str">小幽水晶塔罗能量水晶</string>
+</resources>

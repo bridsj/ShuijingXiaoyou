@@ -1,0 +1,322 @@
+[
+    {
+        "id": 1,
+        "name": "白水晶",
+        "drawable": "diamond1"
+    },
+    {
+        "id": 2,
+        "name": "白幽灵",
+        "drawable": "diamond2"
+    },
+    {
+        "id": 3,
+        "name": "斑彩螺",
+        "drawable": "diamond3"
+    },
+    {
+        "id": 4,
+        "name": "碧玺",
+        "drawable": "diamond4"
+    },
+    {
+        "id": 5,
+        "name": "玻璃陨石",
+        "drawable": "diamond5"
+    },
+    {
+        "id": 6,
+        "name": "草莓晶",
+        "drawable": "diamond6"
+    },
+    {
+        "id": 7,
+        "name": "茶晶",
+        "drawable": "diamond7"
+    },
+    {
+        "id": 8,
+        "name": "砗磲",
+        "drawable": "diamond8"
+    },
+    {
+        "id": 9,
+        "name": "沉香",
+        "drawable": "diamond9"
+    },
+    {
+        "id": 10,
+        "name": "发晶",
+        "drawable": "diamond10"
+    },
+    {
+        "id": 11,
+        "name": "方解石",
+        "drawable": "diamond11"
+    },
+    {
+        "id": 12,
+        "name": "翡翠",
+        "drawable": "diamond12"
+    },
+    {
+        "id": 13,
+        "name": "粉晶",
+        "drawable": "diamond13"
+    },
+    {
+        "id": 14,
+        "name": "橄榄石",
+        "drawable": "diamond14"
+    },
+    {
+        "id": 15,
+        "name": "海蓝宝",
+        "drawable": "diamond15"
+    },
+    {
+        "id": 16,
+        "name": "和田玉",
+        "drawable": "diamond16"
+    },
+    {
+        "id": 17,
+        "name": "黑曜石",
+        "drawable": "diamond17"
+    },
+    {
+        "id": 18,
+        "name": "红纹石",
+        "drawable": "diamond18"
+    },
+    {
+        "id": 19,
+        "name": "红幽灵",
+        "drawable": "diamond19"
+    },
+    {
+        "id": 20,
+        "name": "虎眼石",
+        "drawable": "diamond20"
+    },
+    {
+        "id": 21,
+        "name": "琥珀",
+        "drawable": "diamond21"
+    },
+    {
+        "id": 22,
+        "name": "黄花梨",
+        "drawable": "diamond22"
+    },
+    {
+        "id": 23,
+        "name": "黄晶",
+        "drawable": "diamond23"
+    },
+    {
+        "id": 24,
+        "name": "金",
+        "drawable": "diamond24"
+    },
+    {
+        "id": 25,
+        "name": "金曜石",
+        "drawable": "diamond25"
+    },
+    {
+        "id": 26,
+        "name": "堇青石",
+        "drawable": "diamond26"
+    },
+    {
+        "id": 27,
+        "name": "孔雀石",
+        "drawable": "diamond27"
+    },
+    {
+        "id": 28,
+        "name": "孔雀石",
+        "drawable": "diamond28"
+    },
+    {
+        "id": 29,
+        "name": "拉利玛",
+        "drawable": "diamond29"
+    },
+    {
+        "id": 30,
+        "name": "拉长石",
+        "drawable": "diamond30"
+    },
+    {
+        "id": 31,
+        "name": "蓝晶石",
+        "drawable": "diamond31"
+    },
+    {
+        "id": 32,
+        "name": "磷灰石",
+        "drawable": "diamond32"
+    },
+    {
+        "id": 33,
+        "name": "绿松石",
+        "drawable": "diamond33"
+    },
+    {
+        "id": 34,
+        "name": "绿幽灵",
+        "drawable": "diamond34"
+    },
+    {
+        "id": 35,
+        "name": "玛瑙",
+        "drawable": "diamond35"
+    },
+    {
+        "id": 36,
+        "name": "摩根石",
+        "drawable": "diamond36"
+    },
+    {
+        "id": 37,
+        "name": "南红",
+        "drawable": "diamond37"
+    },
+    {
+        "id": 38,
+        "name": "欧泊",
+        "drawable": "diamond38"
+    },
+    {
+        "id": 39,
+        "name": "葡萄石",
+        "drawable": "diamond39"
+    },
+    {
+        "id": 40,
+        "name": "蔷薇辉石",
+        "drawable": "diamond40"
+    },
+    {
+        "id": 41,
+        "name": "青金石",
+        "drawable": "diamond41"
+    },
+    {
+        "id": 42,
+        "name": "三轮紫骨干",
+        "drawable": "diamond42"
+    },
+    {
+        "id": 43,
+        "name": "珊瑚",
+        "drawable": "diamond43"
+    },
+    {
+        "id": 44,
+        "name": "石榴石",
+        "drawable": "diamond44"
+    },
+    {
+        "id": 45,
+        "name": "舒俱来",
+        "drawable": "diamond45"
+    },
+    {
+        "id": 46,
+        "name": "太阳石",
+        "drawable": "diamond46"
+    },
+    {
+        "id": 47,
+        "name": "天河石",
+        "drawable": "diamond47"
+    },
+    {
+        "id": 48,
+        "name": "天铁",
+        "drawable": "diamond48"
+    },
+    {
+        "id": 49,
+        "name": "托帕石",
+        "drawable": "diamond49"
+    },
+    {
+        "id": 50,
+        "name": "喜玛拉雅岩盐",
+        "drawable": "diamond50"
+    },
+    {
+        "id": 51,
+        "name": "小叶紫檀",
+        "drawable": "diamond51"
+    },
+    {
+        "id": 52,
+        "name": "崖柏",
+        "drawable": "diamond52"
+    },
+    {
+        "id": 53,
+        "name": "银",
+        "drawable": "diamond53"
+    },
+    {
+        "id": 54,
+        "name": "月光石",
+        "drawable": "diamond54"
+    },
+    {
+        "id": 55,
+        "name": "珍珠",
+        "drawable": "diamond55"
+    },
+    {
+        "id": 56,
+        "name": "朱砂",
+        "drawable": "diamond56"
+    },
+    {
+        "id": 57,
+        "name": "紫黄晶",
+        "drawable": "diamond57"
+    },
+    {
+        "id": 58,
+        "name": "紫晶",
+        "drawable": "diamond58"
+    },
+    {
+        "id": 59,
+        "name": "紫锂辉",
+        "drawable": "diamond59"
+    },
+    {
+        "id": 60,
+        "name": "紫龙晶",
+        "drawable": "diamond60"
+    },
+    {
+        "id": 61,
+        "name": "紫玉",
+        "drawable": "diamond61"
+    },
+    {
+        "id": 62,
+        "name": "祖母绿",
+        "drawable": "diamond62"
+    },
+    {
+        "id": 63,
+        "name": "̹ɣʯ",
+        "drawable": "diamond63"
+    },
+    {
+        "id": 64,
+        "name": "өʯ",
+        "drawable": "diamond64"
+    }
+]

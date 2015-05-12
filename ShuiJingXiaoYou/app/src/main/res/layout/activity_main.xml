@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg_color">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scrollbarThumbVertical="@drawable/base_list_scrollbar_handle"
+        android:scrollbarTrackVertical="@drawable/base_list_scrollbar_handle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/category_taobao_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawablePadding="6dp"
+                    android:drawableTop="@drawable/tag_shop_selector"
+                    android:text="@string/category_taobao_str"
+                    android:textColor="@color/category_text_color"
+                    android:textSize="@dimen/category_text_size" />
+
+                <Button
+                    android:id="@+id/category_xiaoyouba_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawablePadding="6dp"
+                    android:drawableTop="@drawable/tag_bar_selector"
+                    android:text="@string/category_xiaoyouba_str"
+                    android:textColor="@color/category_text_color"
+                    android:textSize="@dimen/category_text_size" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/category_zaixian_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawablePadding="6dp"
+                    android:drawableTop="@drawable/tag_zhanbu_selector"
+                    android:text="@string/category_zaixian_str"
+                    android:textColor="@color/category_text_color"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/category_xiaoyouwei_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawablePadding="6dp"
+                    android:drawableTop="@drawable/tag_website_selector"
+                    android:text="@string/category_xiaoyouwei_str"
+                    android:textColor="@color/category_text_color"
+                    android:textSize="@dimen/category_text_size" />
+
+                <Button
+                    android:id="@+id/category_xiaoyoutuijian_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawablePadding="6dp"
+                    android:drawableTop="@drawable/tag_recommand_selector"
+                    android:text="@string/category_xiaoyoutuijian_str"
+                    android:textColor="@color/category_text_color"
+                    android:textSize="@dimen/category_text_size" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

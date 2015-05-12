@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/web_view_root_box"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/app_theme_color"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/common_navbar_back"
+            android:paddingRight="20dp"
+            android:text="@string/back_str"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/detail_title"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:src="@drawable/icon"
+            android:id="@+id/share_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_width="50dp"
+            android:layout_centerVertical="true"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_alignParentRight="true"
+            android:background="@null" />
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/action_bar"
+        android:scrollbarSize="3dp"
+        android:scrollbarThumbVertical="@drawable/base_list_scrollbar_handle" />
+
+    <RelativeLayout
+        android:id="@id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/detail_bgColor"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            android:id="@+id/btn_browser_back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/browser_back_selector" />
+
+        <ImageView
+            android:id="@+id/btn_browser_forward"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/btn_browser_back"
+            android:scaleType="center"
+            android:src="@drawable/browser_forward_selector" />
+
+        <ImageView
+            android:id="@+id/btn_browser_refresh"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="center"
+            android:src="@drawable/browser_reflesh_selector" />
+    </RelativeLayout>
+
+    <com.shui.jing.xiao.you.ui.widget.ZMProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp" />
+
+</RelativeLayout>
