@@ -39,7 +39,7 @@ public class MainActivity extends BaseFragmentActivity {
                     return;
                 }
                 Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
-                intent.putExtra(WebViewActivity.KEY_URL, "http://shop70278877.m.taobao.com/");
+                intent.putExtra(WebViewActivity.KEY_URL, "http://shop70278877.m.taobao.com/?t=" + System.currentTimeMillis());
                 intent.putExtra(WebViewActivity.KEY_TITLE, getString(R.string.category_taobao_str));
                 intent.putExtra(WebViewActivity.IS_SHOW_SHARE, true);
                 startActivity(intent);
@@ -63,7 +63,7 @@ public class MainActivity extends BaseFragmentActivity {
                     return;
                 }
                 Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
-                intent.putExtra(WebViewActivity.KEY_URL, "http://m.wsq.qq.com/218149417?_wv=1");
+                intent.putExtra(WebViewActivity.KEY_URL, "http://m.wsq.qq.com/218149417?_wv=1&t=" + System.currentTimeMillis());
                 intent.putExtra(WebViewActivity.KEY_TITLE, getString(R.string.category_xiaoyouba_str));
                 startActivity(intent);
             }
@@ -75,7 +75,7 @@ public class MainActivity extends BaseFragmentActivity {
                     return;
                 }
                 Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
-                intent.putExtra(WebViewActivity.KEY_URL, "http://xiaoyoushuijing.bama555.com/");
+                intent.putExtra(WebViewActivity.KEY_URL, "http://xiaoyoushuijing.bama555.com/?t=" + System.currentTimeMillis());
                 intent.putExtra(WebViewActivity.KEY_TITLE, getString(R.string.category_xiaoyouwei_str));
                 startActivity(intent);
             }
@@ -87,7 +87,7 @@ public class MainActivity extends BaseFragmentActivity {
                     return;
                 }
                 Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
-                intent.putExtra(WebViewActivity.KEY_URL, "http://xiaoyoushuijing.bama555.com/cate?id=53461760a192f062&wxid=");
+                intent.putExtra(WebViewActivity.KEY_URL, "http://xiaoyoushuijing.bama555.com/cate?id=53461760a192f062&wxid=&t=" + System.currentTimeMillis());
                 intent.putExtra(WebViewActivity.KEY_TITLE, getString(R.string.category_xiaoyoutuijian_str));
                 startActivity(intent);
             }

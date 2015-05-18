@@ -29,6 +29,8 @@ import com.shui.jing.xiao.you.ui.utils.DoubleKeyUtils;
 import com.shui.jing.xiao.you.ui.utils.KeyboardUtil;
 import com.shui.jing.xiao.you.ui.widget.ZMProgressBar;
 
+import java.io.File;
+
 /**
  * @author deng.shengjin
  * @version create_time:2014-7-18_下午5:55:19
@@ -108,13 +110,14 @@ public class WebViewActivity extends BaseFragmentActivity {
             mWebView.getSettings().setDisplayZoomControls(false);
         }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            mWebView.getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
+//            mWebView.getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
         }
 //        mWebView.getSettings().setCacheMode(WebSettings.LOAD_DEFAULT);
         mWebView.getSettings().setSupportZoom(true);
         mWebView.getSettings().setAppCacheEnabled(false);
         mWebView.getSettings().setDomStorageEnabled(true);
 
+        mWebView.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
         mWebView.getSettings().setUseWideViewPort(true);
         mWebView.getSettings().setLoadWithOverviewMode(true);
         mWebView.setDownloadListener(new WebViewDownLoadListener());
@@ -298,6 +301,16 @@ public class WebViewActivity extends BaseFragmentActivity {
         } catch (Throwable t) {
 
         }
+        new Thread() {
+            @Override
+            public void run() {
+                try {
+                    clearWebViewCache();
+                } catch (Throwable t) {
+                    t.printStackTrace();
+                }
+            }
+        }.start();
     }
 
     private void updateBtnStatus() {
@@ -357,9 +370,56 @@ public class WebViewActivity extends BaseFragmentActivity {
                 }
 
 
-
             }
         }).create().show();
+    }
+
+
+    public void clearWebViewCache() {
+
+        //清理Webview缓存数据库
+        try {
+            deleteDatabase("webview.db");
+            deleteDatabase("webviewCache.db");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        //WebView 缓存文件
+        File appCacheDir = new File(getFilesDir().getAbsolutePath());
+
+        File webviewCacheDir = new File(getCacheDir().getAbsolutePath() + "/webviewCache");
+
+        //删除webview 缓存目录
+        if (webviewCacheDir.exists()) {
+            deleteFile(webviewCacheDir);
+        }
+        //删除webview 缓存 缓存目录
+        if (appCacheDir.exists()) {
+            deleteFile(appCacheDir);
+        }
+    }
+
+    /**
+     * 递归删除 文件/文件夹
+     *
+     * @param file
+     */
+    public void deleteFile(File file) {
+
+
+        if (file.exists()) {
+            if (file.isFile()) {
+                file.delete();
+            } else if (file.isDirectory()) {
+                File files[] = file.listFiles();
+                for (int i = 0; i < files.length; i++) {
+                    deleteFile(files[i]);
+                }
+            }
+            file.delete();
+        } else {
+        }
     }
 
 }
