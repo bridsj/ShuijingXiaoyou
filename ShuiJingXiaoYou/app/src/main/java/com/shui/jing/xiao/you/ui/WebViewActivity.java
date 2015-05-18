@@ -112,18 +112,17 @@ public class WebViewActivity extends BaseFragmentActivity {
         }
 //        mWebView.getSettings().setCacheMode(WebSettings.LOAD_DEFAULT);
         mWebView.getSettings().setSupportZoom(true);
-        mWebView.getSettings().setAppCacheEnabled(true);
+        mWebView.getSettings().setAppCacheEnabled(false);
         mWebView.getSettings().setDomStorageEnabled(true);
-        mWebView.getSettings().setAppCacheMaxSize(1024 * 1024 * 4);
 
         mWebView.getSettings().setUseWideViewPort(true);
         mWebView.getSettings().setLoadWithOverviewMode(true);
         mWebView.setDownloadListener(new WebViewDownLoadListener());
         mWebView.setHorizontalScrollBarEnabled(false);
 
-        String appCachePath = getApplicationContext().getCacheDir().getAbsolutePath();
-        mWebView.getSettings().setAppCachePath(appCachePath);
-        mWebView.getSettings().setAllowFileAccess(true);
+//        String appCachePath = getApplicationContext().getCacheDir().getAbsolutePath();
+//        mWebView.getSettings().setAppCachePath(appCachePath);
+//        mWebView.getSettings().setAllowFileAccess(true);
         CookieManager.getInstance().setAcceptCookie(true);
 
 
